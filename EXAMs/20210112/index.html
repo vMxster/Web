@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <form action="#" method="get">
+            <fieldset>
+                <legend>Anagrafica</legend>
+                <ul>
+                    <li>
+                        <label for="name">Nome: </label><input type="text" name="name" id="name"/>
+                    </li>
+                    <li>
+                        <label for="surname">Cognome: </label><input type="text" name="surname" id="surname"/>
+                    </li>
+                    <li>
+                        <label for="age">Età: </label><input type="number" min="1" max="150" name="age" id="age"/>
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <legend>Personalizzazione</legend>
+                <ul>
+                    <li>
+                        <input type="radio" name="model" id="model1" value="long"/>
+                        <label for="model1">Maniche Lunghe</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="model" id="model2"/>
+                        <label for="model2">Maniche Corte</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="model" id="model3"/>
+                        <label for="model3">Felpa</label>
+                    </li>
+                    <li>
+                        <label for="color">Colore: <input type="color" name="color" id="color"/></label>
+                    </li>
+                </ul>
+            </fieldset>
+            <input type="submit" value="Submit" />
+            <input type="reset" value="Cancella" />
+        </form>
+    </main>
+</body>
+</html>
