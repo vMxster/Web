@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esercizio 1</title>
+    <style>
+        table {
+            border: 1px solid black
+        }
+
+        td, th {
+            border: 1px solid black
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Appelli d'esame</caption>
+        <thead>
+            <tr>
+                <th id="giorno" scope="colgroup">Giorno</th>
+                <th id="aula" scope="colgroup">Aula</th>
+                <th id="9-10" scope="col">9:00 - 10:00</th>
+                <th id="10-11" scope="col">10:00 - 11:00</th>
+                <th id="11-12" scope="col">11:00 - 12:00</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th id="lun" scope="rowgroup" rowspan="2" headers="giorno">Lunedì</th>
+                <th id="aula2.9" scope="row" headers="lun aula">Aula 2.9</th>
+                <td headers="9-10 10-11 lun aula2.9" colspan="2">Sistemi Operativi</td>
+                <td headers="11-12 lun aula2.9">Informatica e diritto</td>
+            </tr>
+            <tr>
+                <th id="lab3.1" scope="row" headers="lun aula">Laboratorio 3.1</th>
+                <td headers="9-10 lun lab3.1">Reti di comunicazione</td>
+                <td headers="11-12 10-11 lun lab3.1" colspan="2">Basi di dati</td>
+            </tr>
+            <tr>
+                <th id="mar" scope="rowgroup" rowspan="2" headers="giorno">Martedì</th>
+                <th id="aula2.5" scope="row" headers="mar aula">Aula 2.5</th>
+                <td headers="9-10 mar aula2.5">Programmazione</td>
+                <td headers="10-11 mar aula2.5">Analisi Matematica</td>
+                <td headers="11-12 mar aula2.5">Algoritmi e strutture dati</td>
+            </tr>
+            <tr>
+                <th id="lab3.3" scope="row" headers="mar aula">Laboratorio 3.3</th>
+                <td headers="9-10 10-11 mar lab3.3" colspan="2">Tecnologie Web</td>
+                <td headers="11-12 mar lab3.3">Programmazione ad oggetti</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
