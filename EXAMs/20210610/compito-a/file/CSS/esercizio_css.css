@@ -1,0 +1,67 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    float: right;
+    width: 20%;
+    border: 2px solid darkgreen;
+    margin: 5px 1% 0;
+}
+
+nav ul {
+    width: 100%;
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+nav li {
+    text-indent: 8%;
+    margin: 1em 0 1em;
+}
+
+nav a:hover {
+    background-color: darkgreen;
+    color: white;
+}
+
+header {
+    display: inline-block;
+    width: 70%;
+    margin: 5px 1% 0;
+    background-color: lightgreen;
+    border: 2px solid darkgreen;
+    color: black;
+    box-shadow: 5px 5px 5px green;
+    text-align: center;
+    padding: 15px 0;
+}
+
+h1 {
+    display: inline-block;
+    width: 100%;
+}
+
+section {
+    width: 70%;
+    margin: 20px 1%;
+    display: inline-block;
+    text-align: left;
+    color: black;
+    font-size: medium;
+}
+
+footer {
+    display: inline-block;
+    width: 70%;
+    background-color: white;
+    border: 2px solid darkgreen;
+    color: darkgreen;
+    box-shadow: 5px 5px 5px green;
+    text-align: center;
+    margin: 5px 1% 0;
+    padding: 5px 0;
+    font-size: small;
+}

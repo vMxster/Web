@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esercizio HTML</title>
+</head>
+<body>
+    <table>
+        <caption>Bilancio di Genere: personale al 2020</caption>
+        <thead>
+            <tr>
+                <th id="inq" scope="colgroup">inquadramento</th>
+                <th id="per" scope="colgroup">personale</th>
+                <th id="unit" scope="col">unità di personale</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th headers="inq" id="d" rowspan="2" scope="rowgroup">donne</th>
+                <th headers="d per" id="doc" scope="row">docenti</th>
+                <td headers="unit doc d">1.782</td>
+            </tr>
+            <tr>
+                <th headers="per d" id="amm" scope="row">amministrativi</th>
+                <td headers="unit amm d">1.012</td>
+            </tr>
+            <tr>
+                <th headers="inq" id="u" rowspan="2" scope="rowgroup">uomini</th>
+                <th headers="per u" id="d" scope="row">docenti</th>
+                <td headers="unit doc u">1.497</td>
+            </tr>
+            <tr>
+                <th headers="per u" id="d" scope="row">amministrativi</th>
+                <td headers="unit amm u">1.246</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

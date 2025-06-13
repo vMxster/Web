@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esercizio HTML</title>
+</head>
+<body>
+    <header><h1>Friends</h1></header>
+    <section>
+        <h2>Episodi</h2>
+        <table>
+            <caption>Alcuni Episodi di Friends</caption>
+            <thead>
+                <tr>
+                    <th id="stag" scope="colgroup" rowspan="2">Stagione</th>
+                    <th id="titEpis" scope="colgroup" colspan="2">Titolo Episodio</th>
+                </tr>
+                <tr>
+                    <th headers="titEpis" id="titIta" scope="col">Titolo in Italiano</th>
+                    <th headers="titEpis" id="titOrig" scope="col">Titolo Originale</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th headers="stag" id="prim" scope="rowgroup" rowspan="2">Prima</th>
+                    <td headers="titIta titEpis prim">A lume di candela</td>
+                    <td headers="titOrig titEpis prim">The One with the Blackout</td>
+                </tr>
+                <tr>
+                    <td headers="titIta titEpis prim">Uno strano ospite</td>
+                    <td headers="titOrig titEpis prim">The One with the Stoned Guy</td>
+                </tr>
+                <tr>
+                    <th headers="stag" id="sec" scope="rowgroup" rowspan="2">Seconda</th>
+                    <td headers="titIta titEpis sec">I due bulli</td>
+                    <td headers="titOrig titEpis sec">The One with the Bullies</td>
+                </tr>
+                <tr>
+                    <td headers="titIta titEpis sec">Doppia festa per Rachel</td>
+                    <td headers="titOrig titEpis sec">The One with the Two Parties</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</body>
+</html>

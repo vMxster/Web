@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esercizio HTML</title>
+    <link rel="stylesheet" href="./style.css" type="text/css" />
+</head>
+<body>
+    <section>
+        <h1>Iscrizione</h1>
+        <form action="./PHP/action.php" method="get" target="_blank">
+            <fieldset><legend>Informazioni Aggiuntive:</legend>
+                <p>
+                    <label for="h">Altezza: </label>
+                    <input type="range" min="1" max="2.10" step="0.1" id="h" name="height" />
+                </p>
+                <p>
+                    Allergie/Intolleranze:
+                </p>
+                <input type="checkbox" id="cel" name="celiachia" />
+                <label for="cel">Celiachia</label>
+                <input type="checkbox" id="prolat" name="proteine_latte" />
+                <label for="prolat">Proteine del latte</label>
+                <input type="checkbox" id="altro" name="altro" />
+                <label for="altro">Altro</label>
+            </fieldset><fieldset><legend>Informazioni Personali:</legend>
+                <label for="h">Email:* </label>
+                <input type="email" id="h" name="height" placeholder="Email" autocomplete="false" required />
+                <label for="h">Telefono:* </label>
+                <input type="tel" id="h" name="height" placeholder="Telefono" autocomplete="false" required/>
+                <label for="h">Mese e anno di nascita: </label>
+                <input type="month" id="h" name="height" />
+            </fieldset>
+            <input type="submit" value="Invia">
+        </form>
+    </section>
+</body>
+</html>
