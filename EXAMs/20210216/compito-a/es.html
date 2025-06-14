@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esercizio HTML</title>
+</head>
+<body>
+    <section>
+        <h1>Modulo di Prenotazione</h1>
+        <form action="#">
+            <fieldset><legend><h2>Anagrafica</h2></legend>
+                <p>
+                    <label for="name">Nome: </label>
+                    <input type="text" name="name" id="name">
+                </p>
+                <p>
+                    <label for="lastname">Cognome: </label>
+                    <input type="text" name="lastname" id="lastname">
+                </p>
+                <p>
+                    <label for="birthdate">Anno di nascita</label>
+                    <input type="date" name="birthdate" id="birthdate">
+                </p>
+            </fieldset>
+            <fieldset><legend><h2>Prenotazione</h2></legend>
+                <h3>Tipo di Prenotazione:</h3>
+                <ul>
+                    <li>
+                        <label for="tampone">Tampone</label>
+                        <input type="checkbox" name="prenotazione[]" id="tampone">
+                    </li>
+                    <li>
+                        <label for="sierologico">Sierologico</label>
+                        <input type="checkbox" name="prenotazione[]" id="sierologico">
+                    </li>
+                    <li>
+                        <label for="vax">Vaccino</label>
+                        <input type="checkbox" name="prenotazione[]" id="vax">
+                    </li>
+                </ul>
+                <h3>Luogo:</h3>
+                <ul>
+                    <li>
+                        <label for="farmacia">Farmacia</label>
+                        <input type="radio" name="luogo" id="farmacia">
+                    </li>
+                    <li>
+                        <label for="medico">Medico di famiglia</label>
+                        <input type="radio" name="luogo" id="medico">
+                    </li>
+                    <li>
+                        <label for="ambulatorio">Ambulatorio</label>
+                        <input type="radio" name="luogo" id="ambulatorio">
+                    </li>
+                    <li>
+                        <label for="ospedale">Ospedale</label>
+                        <input type="radio" name="luogo" id="ospedale">
+                    </li>
+                </ul>
+            </fieldset>
+            <button type="submit">Invia</button>
+            <button type="reset">Cancella</button>
+        </form>
+    </section>
+</body>
+</html>
